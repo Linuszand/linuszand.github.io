@@ -523,11 +523,6 @@ body, body *, header, footer, .content, .content-outline, nav a {
         gap: 15px;
     }
 
-    .nav-divider {
-        width: 3px;
-    }
-
-
     .logo h1 {
         text-wrap: nowrap;
     }
@@ -539,7 +534,6 @@ body, body *, header, footer, .content, .content-outline, nav a {
     nav {
         gap: 10px;
     }
-
 
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -583,9 +577,125 @@ body, body *, header, footer, .content, .content-outline, nav a {
         gap: 15px;
     }
 
-
     .logo h1 {
         text-wrap: nowrap;
+    }
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+
+    .home-navbar {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 0 2.5%;
+    }
+
+    .nav-divider {
+        display: none;
+    }
+
+    .night-mode-button {
+        justify-content: right;
+        display: flex;
+        width: 100%;
+    }
+
+    .top-image {
+        height: 250px;
+    }
+
+    .socials {
+        display: none;
+    }
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+
+    .home-navbar {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 2.5%;
+    }
+
+
+    .top-image {
+        height: 250px;
+        width: 100%;
+    }
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 5%;
+    }
+
+    .logo h1 {
+        display: none;
     }
 
     nav .dropdown {
@@ -608,18 +718,17 @@ body, body *, header, footer, .content, .content-outline, nav a {
 
     .project-grid {
         grid-template-columns: 1fr;
-        width: 95%;
+        width: 100%;
         padding: 0 2.5%;
     }
 
     .night-mode-button {
-        justify-content: right;
-        display: flex;
-        width: 100%;
+        display: none;
     }
 
     .top-image {
         height: 250px;
+        width: 100%;
     }
 
     .socials {
@@ -630,6 +739,13 @@ body, body *, header, footer, .content, .content-outline, nav a {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 }
 
