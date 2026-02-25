@@ -514,6 +514,12 @@ body, body *, header, footer, .content, .content-outline, nav a {
         gap: 15px;
     }
 
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -568,63 +574,11 @@ body, body *, header, footer, .content, .content-outline, nav a {
         gap: 15px;
     }
 
-}
-
-@media (max-width: 768px) {
-
-    header {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .logo h1 {
-        text-wrap: nowrap;
-    }
-
-    nav .dropdown {
-        display: block;
-    }
-
-    nav {
-        gap: 10px;
-    }
-
-
-    .home-navbar {
-        flex-direction: row;
-        gap: 40px;
-        max-width: 100%;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-        width: 95%;
-        padding: 0 2.5%;
-    }
-
-    .nav-divider {
-        display: none;
-    }
-
-    .night-mode-button {
-        justify-content: right;
-        display: flex;
-        width: 100%;
-    }
-
-    .top-image {
-        height: 250px;
-    }
-
-    .socials {
-        display: none;
-    }
-
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -683,6 +637,72 @@ body, body *, header, footer, .content, .content-outline, nav a {
         padding: 0;
     }
 }
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        text-wrap: nowrap;
+    }
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+
+    .home-navbar {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 0 2.5%;
+    }
+
+    .nav-divider {
+        display: none;
+    }
+
+    .night-mode-button {
+        justify-content: right;
+        display: flex;
+        width: 100%;
+    }
+
+    .top-image {
+        height: 250px;
+    }
+
+    .socials {
+        display: none;
+    }
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 
 @media (max-width: 480px) {
 
