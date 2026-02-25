@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 2%;
+    padding: 10px 2%;
     background-color: var(--bg-color);
     border-bottom: 2px solid var(--sandy-brown);
 }
@@ -18,10 +18,17 @@ button {
     color: var(--light-cream);
 }
 
-.home-navbar {
+.night-socials-grouper {
     display: flex;
     align-items: center;
-    width: 100%;
+    gap: 15px;
+}
+
+
+.home-navbar {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
     max-width: 1200px;
     gap: 70px;
 }
@@ -225,7 +232,6 @@ video {
 
 .socials {
     display: flex;
-    align-items: stretch;
     justify-content: flex-end;
 }
 
@@ -319,6 +325,7 @@ video {
     border-bottom: none;
     cursor: pointer;
     display: flex;
+    justify-content: right;
     filter: brightness(0) invert(1) sepia(1) saturate(1);
 }
 
@@ -350,7 +357,6 @@ video {
     border-left: none;
     border-bottom: none;
     cursor: pointer;
-    display: none;
     align-items: center;
     filter: brightness(0) invert(1) sepia(1) saturate(1);
 }
@@ -365,7 +371,6 @@ video {
 .night-mode-button2 img {
     width: 24px;
     height: 24px;
-    display: none;
     opacity: 0.8;
     transition: all 0.3s ease;
     filter: brightness(0) invert(1) sepia(1) saturate(1);
@@ -400,9 +405,21 @@ footer {
 }
 
 .nav-divider {
-    width: 3px;
+    width: 2px;
+    min-width: 2px;
     background-color: var(--lighter-brown);
-    align-self: stretch;
+    align-self: center;
+    height: 35px;
+    margin: 0 10px;
+}
+
+.nav-divider2 {
+    width: 2px;
+    min-width: 2px;
+    background-color: var(--lighter-brown);
+    align-self: center;
+    height: 35px;
+    margin: 0 10px;
 }
 
 :root {
@@ -448,7 +465,6 @@ body, body *, header, footer, .content, .content-outline, nav a {
     header {
         flex-direction: row;
         gap: 15px;
-        padding: 20px 2%;
     }
 
     .nav-divider {
@@ -464,15 +480,6 @@ body, body *, header, footer, .content, .content-outline, nav a {
         display: block;
     }
 
-    nav {
-        gap: 10px;
-    }
-
-    .home-navbar {
-        flex-direction: row;
-        gap: 40px;
-        max-width: 100%;
-    }
 
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -492,8 +499,64 @@ body, body *, header, footer, .content, .content-outline, nav a {
         border: none;
     }
 
-    .night-mode-button2 {
+    .night-mode-button2 img {
         display: flex;
+        margin-left: 30px;
+    }
+
+    .top-image {
+        height: 400px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .nav-divider {
+        width: 3px;
+    }
+
+
+    .logo h1 {
+        text-wrap: nowrap;
+    }
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        padding: 0 2.5%;
+    }
+
+    .night-mode-button img {
+        margin-left: 0 !important;
+    }
+
+    .night-mode-button {
+        justify-content: right;
+        width: 100%;
+        display: flex;
+        margin-left: 30px;
+        border: none;
     }
 
     .night-mode-button2 img {
@@ -518,12 +581,8 @@ body, body *, header, footer, .content, .content-outline, nav a {
     header {
         flex-direction: row;
         gap: 15px;
-        padding: 20px 2%;
     }
 
-    .nav-divider {
-        display: none;
-    }
 
     .logo h1 {
         text-wrap: nowrap;
@@ -535,6 +594,10 @@ body, body *, header, footer, .content, .content-outline, nav a {
 
     nav {
         gap: 10px;
+    }
+
+    .nav-divider {
+        display: none;
     }
 
     .home-navbar {
