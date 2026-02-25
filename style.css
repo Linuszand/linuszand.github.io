@@ -794,7 +794,7 @@ body, body *, header, footer, .content, .content-outline, nav a {
     }
 
     nav {
-        gap: 10px;
+        margin-left: -30px;
     }
 
     .nav-divider {
@@ -803,7 +803,6 @@ body, body *, header, footer, .content, .content-outline, nav a {
 
     .home-navbar {
         flex-direction: row;
-        gap: 40px;
         max-width: 100%;
     }
 
