@@ -46,7 +46,7 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
@@ -56,6 +56,7 @@ nav a:hover {
 
 nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
@@ -714,6 +715,71 @@ body, body *, header, footer, .content, .content-outline, nav a {
     header {
         flex-direction: row;
         justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 5%;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .nav-divider {
+        display: none;
+    }
+
+    .home-navbar {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 2.5%;
+    }
+
+    .night-mode-button {
+        display: none;
+    }
+
+    .top-image {
+        height: 250px;
+        width: 100%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: row;
+        justify-content: left;
         width: 100%;
         box-sizing: border-box;
         padding: 15px 5%;
