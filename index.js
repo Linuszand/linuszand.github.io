@@ -2,7 +2,7 @@
     try {
         const response = await fetch('data.json');
         const data = await response.json();
-        
+
         const projectList = document.getElementById('project-list');
         const dropdownLinks = document.getElementById('dropdown-links');
 
@@ -32,6 +32,10 @@
         });
 
         document.getElementById("toggle-night-mode").onclick = () => {
+            document.body.classList.toggle('night-mode');
+        };
+
+        document.getElementById("toggle-night-mode2").onclick = () => {
             document.body.classList.toggle('night-mode');
         };
 

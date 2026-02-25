@@ -14,7 +14,6 @@ button {
 
 .logo h1 {
     margin: 0;
-    font-size: 2rem;
     font-family: "Agency FB", serif;
     color: var(--light-cream);
 }
@@ -24,7 +23,7 @@ button {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    gap: 100px;
+    gap: 70px;
 }
 
 nav a {
@@ -35,7 +34,7 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     transition: color 0.3s ease;
 }
 
@@ -154,12 +153,12 @@ body {
 
 .content-outline:hover {
     border: 3px solid var(--light-cream);
-    transition: border-color 1 ease;
+    transition: border-color 1s ease;
 }
 
 .content-outline:hover .video {
     border-color: var(--light-cream);
-    transition: border-color 1 ease;
+    transition: border-color 1s ease;
 }
 
 .content {
@@ -225,6 +224,12 @@ video {
 }
 
 .socials {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.socials-footer {
     display: flex;
     align-items: stretch;
     justify-content: flex-end;
@@ -314,22 +319,53 @@ video {
     border-bottom: none;
     cursor: pointer;
     display: flex;
-    align-items: center;
     filter: brightness(0) invert(1) sepia(1) saturate(1);
 }
+
 
 .night-mode-button:hover {
     opacity: 1;
     transform: translateY(-0.5px);
-    transition: filter 0 ease-out;
+    transition: filter 4s ease-out;
     filter: invert(30%) sepia(13%) saturate(2207%) hue-rotate(334deg);
 }
 
 .night-mode-button img {
     width: 24px;
     height: 24px;
-    display: block;
-    margin-left: 500px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    filter: brightness(0) invert(1) sepia(1) saturate(1);
+}
+
+.night-mode-button2 {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    padding-right: 15px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    filter: brightness(0) invert(1) sepia(1) saturate(1);
+}
+
+.night-mode-button2:hover {
+    opacity: 1;
+    transform: translateY(-0.5px);
+    transition: filter 4s ease-out;
+    filter: invert(30%) sepia(13%) saturate(2207%) hue-rotate(334deg);
+}
+
+.night-mode-button2 img {
+    width: 24px;
+    height: 24px;
+    display: none;
     opacity: 0.8;
     transition: all 0.3s ease;
     filter: brightness(0) invert(1) sepia(1) saturate(1);
@@ -405,5 +441,132 @@ body, body *, header, footer, .content, .content-outline, nav a {
     color 0.4s ease,
     border-color 0.4s ease,
     filter 0.4s ease;
+}
+
+@media (max-width: 1300px) {
+
+    header {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px 2%;
+    }
+
+    .nav-divider {
+        width: 3px;
+    }
+
+
+    .logo h1 {
+        text-wrap: nowrap;
+    }
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .home-navbar {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        padding: 0 2.5%;
+    }
+
+    .night-mode-button img {
+        margin-left: 0 !important;
+    }
+
+    .night-mode-button {
+        justify-content: right;
+        width: 100%;
+        display: flex;
+        margin-left: 30px;
+        border: none;
+    }
+
+    .night-mode-button2 {
+        display: flex;
+    }
+
+    .night-mode-button2 img {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    .top-image {
+        height: 400px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px 2%;
+    }
+
+    .nav-divider {
+        display: none;
+    }
+
+    .logo h1 {
+        text-wrap: nowrap;
+    }
+
+    nav .dropdown {
+        display: block;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .home-navbar {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 0 2.5%;
+    }
+
+    .night-mode-button {
+        justify-content: right;
+        display: flex;
+        width: 100%;
+    }
+
+    .top-image {
+        height: 250px;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 }
 
