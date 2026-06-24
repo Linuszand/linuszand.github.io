@@ -386,7 +386,7 @@ footer {
     padding: 20px 2%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--bg-color);
+    background-color: var(--footer-bg);
     margin-top: 20px;
     border-top: 3px solid var(--sandy-brown);
 }
@@ -439,6 +439,7 @@ footer {
     --grid-color: #765E4A;
     --button-color: #F2E8DF;
     --textcredits-color: #2b1d0e;
+    --footer-bg: #836953;
 }
 
 .night-mode {
@@ -452,11 +453,7 @@ footer {
     --grid-color: #2A1D16;
     --button-color: #1E1510;
     --textcredits-color: #A35638;
-}
-
-body:not(.night-mode) .top-image {
-    filter: grayscale(10%) hue-rotate(20deg) saturate(2) brightness(0.25) contrast(1.05) opacity(1);
-    transition: filter 0.4s ease;
+    --footer-bg: #1E1510;
 }
 
 body, body *, header, footer, .content, .content-outline, nav a {

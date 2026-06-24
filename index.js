@@ -21,7 +21,6 @@
                     </div>
                 </div>`;
             projectList.appendChild(article);
-
             const link = document.createElement('div');
             link.id = project.linkId;
             link.textContent = project.title;
