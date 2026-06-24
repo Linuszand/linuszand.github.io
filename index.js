@@ -1,6 +1,6 @@
 ﻿async function init() {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch('data.json?t=' + Date.now());
         const data = await response.json();
 
         const projectList = document.getElementById('project-list');
